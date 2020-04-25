@@ -51,12 +51,12 @@ public class Factory {
         Command c = cache.get(idCommand);
         if (c==null) {
 
-            System.out.println("utilitzem el carregador de classes");
+            System.out.println("Cargamos des de las clases:");
             c = getCommand2(idCommand);
             cache.put(idCommand, c);
         }
         else {
-            System.out.println("CACHE!!!");
+            System.out.println("Cargamos des de cache:");
         }
 
         return c;
